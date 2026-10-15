@@ -1,0 +1,16 @@
+{
+  "num_exams": 2198,
+  "num_students": 34988,
+  "num_enrollments": 130539,
+  "num_periods": 29,
+  "x_variables": 59041,
+  "c_variables": 72066,
+  "total_variables": 131107,
+  "exact_one_constraints": 2198,
+  "fixed_time_constraints": 154,
+  "distribution_constraints": 494,
+  "conflict_linking_constraints": 1956655,
+  "total_constraints": 1959501,
+  "build_time_seconds": 42.9,
+  "memory_built_mb": 1498.86
+}

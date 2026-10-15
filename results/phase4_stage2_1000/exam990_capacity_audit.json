@@ -1,0 +1,160 @@
+{
+  "audit_phase": "4.3.1",
+  "target_issue": "Exam 990 / Room 351 Stage 2 Infeasibility Audit",
+  "audit_status": "PASS \u2014 GENUINE BENCHMARK INFEASIBILITY CONFIRMED",
+  "root_cause_classification": "E",
+  "root_cause_description": "The raw benchmark data genuinely makes Exam 990 mathematically infeasible under strict capacity and eligibility constraints.",
+  "exam_990_audit": {
+    "exam_id": 990,
+    "student_enrollment": 15,
+    "student_ids": [
+      2009,
+      6535,
+      8450,
+      8900,
+      9806,
+      10345,
+      10417,
+      11408,
+      12167,
+      15801,
+      16891,
+      17791,
+      19064,
+      19564,
+      21684
+    ],
+    "duration_minutes": 120,
+    "average_students": 18,
+    "seating_type": null,
+    "print_offset": 0,
+    "permissible_rooms": [
+      351
+    ],
+    "permissible_periods_count": 29,
+    "fixed_room_status": true,
+    "stage1_assigned_period": 1,
+    "distribution_constraints": [],
+    "room_splitting_possible": false
+  },
+  "room_351_audit": {
+    "room_id": 351,
+    "primary_capacity": 14,
+    "alternative_capacity": 10,
+    "coordinates": "40.4225,-86.91297",
+    "operational_penalties_all_periods": 4,
+    "allowed_exams_total": [
+      721,
+      728,
+      729,
+      989,
+      990,
+      991
+    ],
+    "exams_in_period_1_sharing_room_351": [
+      728,
+      990
+    ]
+  },
+  "capacity_contradiction": {
+    "required_students_q_990": 15,
+    "maximum_physical_capacity_C_351": 14,
+    "physical_deficit": -1,
+    "mathematical_proof": "Hard constraint sum_r q[990, r] == 15 requires seating 15 students. Since r in {351} only, q[990, 351] == 15. But capacity constraint enforces q[990, 351] <= 14 * y[990, 351] <= 14. This creates the contradiction 15 <= 14, which has no mathematical solution."
+  },
+  "similar_cases_in_full_benchmark": [
+    {
+      "exam_id": 118,
+      "students": 78,
+      "allowed_rooms": [
+        139,
+        140
+      ],
+      "capacities": [
+        66,
+        56
+      ],
+      "total_capacity": 122,
+      "status": "MANDATORY SPLIT FEASIBLE (78 <= 122)"
+    },
+    {
+      "exam_id": 990,
+      "students": 15,
+      "allowed_rooms": [
+        351
+      ],
+      "capacities": [
+        14
+      ],
+      "total_capacity": 14,
+      "status": "GENUINE BENCHMARK INFEASIBILITY (15 > 14)"
+    },
+    {
+      "exam_id": 1592,
+      "students": 186,
+      "allowed_rooms": [
+        85,
+        86,
+        100,
+        89,
+        94,
+        92,
+        90,
+        95,
+        96,
+        91,
+        93,
+        84,
+        87
+      ],
+      "capacities": [
+        100,
+        63,
+        48,
+        45,
+        45,
+        44,
+        40,
+        40,
+        40,
+        32,
+        32,
+        30,
+        30
+      ],
+      "total_capacity": 589,
+      "status": "MANDATORY SPLIT FEASIBLE (186 <= 589)"
+    },
+    {
+      "exam_id": 2128,
+      "students": 46,
+      "allowed_rooms": [
+        385,
+        386
+      ],
+      "capacities": [
+        26,
+        26
+      ],
+      "total_capacity": 52,
+      "status": "MANDATORY SPLIT FEASIBLE (46 <= 52)"
+    },
+    {
+      "exam_id": 2171,
+      "students": 77,
+      "allowed_rooms": [
+        312
+      ],
+      "capacities": [
+        20
+      ],
+      "total_capacity": 20,
+      "status": "GENUINE BENCHMARK INFEASIBILITY (77 > 20)"
+    }
+  ],
+  "recommendation": {
+    "chosen_option": 1,
+    "action": "No model change; document genuine benchmark infeasibility.",
+    "details": "Under strict, unrelaxed benchmark eligibility and capacity constraints, Exam 990 cannot be seated without either violating capacity, violating room eligibility, or modifying Stage 1 periods. This is a property of the raw Purdue Fall 2008 benchmark files and not an implementation bug in our Stage 2 solver."
+  }
+}

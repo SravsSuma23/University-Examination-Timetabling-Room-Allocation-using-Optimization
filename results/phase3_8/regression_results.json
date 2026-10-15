@@ -1,0 +1,80 @@
+{
+  "scope_150": {
+    "pairwise_z": {
+      "scope": 150,
+      "status": "OPTIMAL",
+      "scheduled_exams": 150,
+      "x_vars": 4156,
+      "z_vars": 18068,
+      "total_vars": 22224,
+      "total_constraints": 18283,
+      "build_time": 0.74,
+      "solve_time": 1.88,
+      "model_period_penalty": 0.0,
+      "model_conflict_penalty": 0.0,
+      "model_z1": 0.0,
+      "indep_period_penalty": 0,
+      "indep_conflict_penalty": 0,
+      "indep_z1": 0.0,
+      "hard_violations": 0
+    },
+    "student_load": {
+      "scope": 150,
+      "status": "TIME LIMIT REACHED (135/150 exams assigned)",
+      "scheduled_exams": 135,
+      "x_vars": 4156,
+      "n_vars": 71308,
+      "u_vars": 102338,
+      "total_vars": 177802,
+      "total_constraints": 276199,
+      "build_time": 5.79,
+      "solve_time": 39.65,
+      "model_period_penalty": 0.0,
+      "model_conflict_penalty": 0.0,
+      "model_z1": 0.0,
+      "indep_period_penalty": 0,
+      "indep_conflict_penalty": 0,
+      "indep_z1": 0.0,
+      "hard_violations": 0
+    }
+  },
+  "scope_350": {
+    "pairwise_z": {
+      "scope": 350,
+      "status": "OPTIMAL",
+      "scheduled_exams": 350,
+      "x_vars": 9789,
+      "z_vars": 94796,
+      "total_vars": 104585,
+      "total_constraints": 95303,
+      "build_time": 2.79,
+      "solve_time": 62.01,
+      "model_period_penalty": 1.0,
+      "model_conflict_penalty": 0.0,
+      "model_z1": 1.0,
+      "indep_period_penalty": 1,
+      "indep_conflict_penalty": 0,
+      "indep_z1": 1.0,
+      "hard_violations": 0
+    },
+    "student_load": {
+      "scope": 350,
+      "status": "TIME LIMIT REACHED (278/350 exams assigned)",
+      "scheduled_exams": 278,
+      "x_vars": 9789,
+      "n_vars": 242488,
+      "u_vars": 359909,
+      "total_vars": 612186,
+      "total_constraints": 962813,
+      "build_time": 21.78,
+      "solve_time": 163.4,
+      "model_period_penalty": 0.0,
+      "model_conflict_penalty": 0.0,
+      "model_z1": 0.0,
+      "indep_period_penalty": 0,
+      "indep_conflict_penalty": 0,
+      "indep_z1": 0.0,
+      "hard_violations": 0
+    }
+  }
+}

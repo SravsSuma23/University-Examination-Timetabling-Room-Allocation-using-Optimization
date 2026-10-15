@@ -1,0 +1,71 @@
+{
+  "phase": "3.11",
+  "final_classification": "FEASIBLE / TIME LIMIT",
+  "status_statement": "A complete hard-feasible timetable was obtained for all 2,198 examinations, but global optimality was not proven within the 900-second solver window.",
+  "dataset": {
+    "total_exams": 2198,
+    "total_students": 34988,
+    "total_enrollments": 130539,
+    "total_periods": 29,
+    "distribution_rules": 13,
+    "fixed_time_exams_loaded": 154,
+    "full_conflict_pairs": 72066
+  },
+  "formulation": {
+    "name": "pairwise_compact",
+    "alpha": 1.0,
+    "beta": 100.0,
+    "variables": {
+      "x_binary": 59041,
+      "c_continuous": 72066,
+      "total_variables": 131107
+    },
+    "constraints": {
+      "exact_one": 2198,
+      "fixed_time": 154,
+      "distribution": 494,
+      "conflict_linking": 1956655,
+      "total_constraints": 1959501
+    },
+    "build_time_seconds": 42.9,
+    "model_memory_mb": 1498.86
+  },
+  "solver_execution": {
+    "solver": "COIN-OR CBC 2.10.3 (64-bit Windows)",
+    "time_limit_seconds": 900,
+    "cbc_status": "Stopped on time limit (Feasibility Pump integer incumbent)",
+    "continuous_relaxation_bound": 403.0,
+    "continuous_relaxation_time_seconds": 80.9,
+    "cbc_reported_objective": 748806.0,
+    "total_solver_wallclock_seconds": 1076.65,
+    "peak_memory_gb": 4.4
+  },
+  "timetable_completeness": {
+    "total_exams_scheduled": 2198,
+    "percentage_scheduled": 100.0,
+    "timetable_file": "results/phase3_11/timetable_2198_pairwise_compact.csv"
+  },
+  "independent_hard_feasibility": {
+    "exact_one_violations": 0,
+    "invalid_period_violations": 0,
+    "fixed_time_violations": 0,
+    "distribution_violations": 0,
+    "total_hard_violations": 0,
+    "status": "PASS (Zero hard violations across entire benchmark)"
+  },
+  "soft_conflict_quality": {
+    "direct_clashing_exam_pairs": 2415,
+    "total_affected_students": 7482,
+    "period_penalty": 606,
+    "student_conflict_penalty": 7482,
+    "independent_combined_z1": 748806.0
+  },
+  "objective_consistency": {
+    "model_z1": 748806.0,
+    "independent_z1": 748806.0,
+    "match": true,
+    "period_penalty_component": 606.0,
+    "student_conflict_component": 748200.0,
+    "recomputed_z1": 748806.0
+  }
+}

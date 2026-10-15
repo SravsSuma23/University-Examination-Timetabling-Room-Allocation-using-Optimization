@@ -1,0 +1,104 @@
+{
+  "total_scheduled": 2198,
+  "percentage_scheduled": 100.0,
+  "exact_one_violations": 0,
+  "invalid_period_violations": 0,
+  "fixed_time_violations": 0,
+  "distribution_violations": 0,
+  "total_hard_violations": 0,
+  "conflicting_pairs": 2415,
+  "affected_students": 7482,
+  "independent_conflict_penalty": 7482,
+  "independent_period_penalty": 606,
+  "independent_z1": 748806.0,
+  "details": {
+    "exact_one_assignment": {
+      "status": "PASS",
+      "violations": 0,
+      "details": []
+    },
+    "student_conflicts": {
+      "status": "OPTIMIZED_SOFT",
+      "conflicting_pairs": 2415,
+      "affected_students": 7482,
+      "details": [
+        {
+          "exam1": 1,
+          "exam2": 109,
+          "period_id": 13,
+          "shared_students": 2
+        },
+        {
+          "exam1": 39,
+          "exam2": 83,
+          "period_id": 13,
+          "shared_students": 1
+        },
+        {
+          "exam1": 39,
+          "exam2": 307,
+          "period_id": 13,
+          "shared_students": 1
+        },
+        {
+          "exam1": 39,
+          "exam2": 434,
+          "period_id": 13,
+          "shared_students": 5
+        },
+        {
+          "exam1": 66,
+          "exam2": 434,
+          "period_id": 13,
+          "shared_students": 2
+        },
+        {
+          "exam1": 66,
+          "exam2": 1695,
+          "period_id": 13,
+          "shared_students": 2
+        },
+        {
+          "exam1": 66,
+          "exam2": 2091,
+          "period_id": 13,
+          "shared_students": 1
+        },
+        {
+          "exam1": 83,
+          "exam2": 106,
+          "period_id": 13,
+          "shared_students": 1
+        },
+        {
+          "exam1": 83,
+          "exam2": 202,
+          "period_id": 13,
+          "shared_students": 1
+        },
+        {
+          "exam1": 83,
+          "exam2": 434,
+          "period_id": 13,
+          "shared_students": 2
+        }
+      ]
+    },
+    "fixed_time_compliance": {
+      "status": "PASS",
+      "violations": 0,
+      "details": []
+    },
+    "distribution_compliance": {
+      "status": "PASS",
+      "violations": 0,
+      "details": []
+    },
+    "valid_periods": {
+      "status": "PASS",
+      "violations": 0,
+      "details": []
+    },
+    "overall_status": "PASS"
+  }
+}

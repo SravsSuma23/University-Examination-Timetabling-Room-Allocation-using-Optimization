@@ -1,0 +1,343 @@
+{
+  "audit_phase": "4.4.1",
+  "scope": "Phase 4.4 Final Stage 2 Report Metrics Independent Audit",
+  "verdict": "PASS WITH REPORTING CORRECTIONS",
+  "summary": {
+    "total_exams": 2198,
+    "total_periods": 29,
+    "stage1_period_modifications": 0,
+    "period_status_counts": {
+      "optimal_periods": 24,
+      "feasible_timelimit_periods": 3,
+      "infeasible_periods": 2,
+      "total_periods": 29
+    },
+    "period_exam_counts_by_status": {
+      "optimal_period_exams": 1165,
+      "feasible_timelimit_period_exams": 519,
+      "infeasible_period_exams": 514,
+      "total_exams": 2198
+    },
+    "stage2_allocation_table_counts": {
+      "exams_marked_assigned": 1938,
+      "exams_marked_unassigned": 260,
+      "total_exams": 2198
+    },
+    "strictly_solvable_subset_counts": {
+      "solvable_periods": 27,
+      "total_exams_in_solvable_periods": 1684,
+      "fully_optimal_periods": 24,
+      "fully_optimal_period_exams": 1165
+    }
+  },
+  "student_reconciliation": {
+    "A_total_students_all_2198_exams": 130539,
+    "B_students_in_1938_assigned_subset": 118755,
+    "C_students_in_260_unassigned_subset": 11784,
+    "D_students_physically_seated_in_1938_assigned": 118755,
+    "E_difference_total_vs_seated": 11784,
+    "F_students_in_24_optimal_periods_fully_seated": 87840
+  },
+  "objective_reconciliation": {
+    "assigned_subset_1938_exams": {
+      "d1_unused_capacity": 215027,
+      "d2_room_penalty": 660,
+      "split_examinations_count": 382,
+      "d3_additional_room_assignments": 490,
+      "z2_objective": 216177.0
+    },
+    "optimal_periods_subset_1165_exams": {
+      "d1_unused_capacity": 27195,
+      "d2_room_penalty": 167,
+      "split_examinations_count": 319,
+      "d3_additional_room_assignments": 400,
+      "z2_objective": 27762.0
+    }
+  },
+  "bottleneck_exams": {
+    "exam_990": {
+      "period": 1,
+      "enrollment": 15,
+      "permissible_rooms": [
+        351
+      ],
+      "room_capacity": 14,
+      "deficit": -1,
+      "infeasibility_reason": "Room 351 capacity 14 is strictly less than 15 enrolled students; no other room permitted."
+    },
+    "exam_2171": {
+      "period": 12,
+      "enrollment": 77,
+      "permissible_rooms": [
+        312
+      ],
+      "room_capacity": 20,
+      "deficit": -57,
+      "infeasibility_reason": "Room 312 capacity 20 is strictly less than 77 enrolled students; no other room permitted."
+    }
+  },
+  "discrepancies_identified": [
+    {
+      "id": 1,
+      "item": "Infeasible Period Exam Count",
+      "reported_in_report_text": "Period 1 (368) + Period 12 (146) = 504 exams",
+      "true_actual_count": "368 + 146 = 514 exams (arithmetic slip in report text: 514 exams belonged to infeasible periods)",
+      "impact": "Textual arithmetic correction only; the underlying timetable contains 368 and 146 exams."
+    },
+    {
+      "id": 2,
+      "item": "Solver Status Counts",
+      "reported_in_report_text": "23 Optimal, 4 Feasible (Time Limit), 2 Infeasible (1029 optimal, 665 time limit)",
+      "true_actual_count": "24 Optimal, 3 Feasible (Time Limit), 2 Infeasible (1165 optimal, 519 time limit, 514 infeasible)",
+      "impact": "Period 14 (98 exams) solved to global OPTIMAL in 22.56s. It was misclassified in the report summary table as time limit instead of optimal. Actual optimal periods = 24."
+    },
+    {
+      "id": 3,
+      "item": "Student Accommodation Metric Scope",
+      "reported_in_report_text": "Required Students Seated = 130,539",
+      "true_actual_count": "Total students in benchmark = 130,539. Students in the 1,938 assigned exams = 118,755. Students in the 260 unassigned exams = 11,784.",
+      "impact": "Reporting clarification: 130,539 is the total student population of all 2,198 exams; exactly 118,755 students belong to the 1,938 assigned exams."
+    },
+    {
+      "id": 4,
+      "item": "Allocated Exam Count vs Solvable Period Count",
+      "reported_in_report_text": "1,938 exams in the 27 solvable periods",
+      "true_actual_count": "The 1,938 assigned rows come from all periods where heuristic assignments occurred (1,165 from 24 optimal, 410 from 3 time-limit, 363 from 2 infeasible periods). The 27 solvable periods in timetable contain 1,684 exams (1,575 assigned, 109 unassigned).",
+      "impact": "Documentation distinction between table rows marked assigned vs exams residing strictly within solvable periods."
+    }
+  ],
+  "period_table": [
+    {
+      "period": 1,
+      "assigned_exams_timetable": 368,
+      "solver_status": "Infeasible",
+      "allocated_exams_count": 359,
+      "unallocated_exams_count": 9,
+      "category": "Infeasible"
+    },
+    {
+      "period": 2,
+      "assigned_exams_timetable": 40,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 40,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 3,
+      "assigned_exams_timetable": 37,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 37,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 4,
+      "assigned_exams_timetable": 34,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 34,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 5,
+      "assigned_exams_timetable": 84,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 84,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 6,
+      "assigned_exams_timetable": 35,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 35,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 7,
+      "assigned_exams_timetable": 27,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 27,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 8,
+      "assigned_exams_timetable": 28,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 28,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 9,
+      "assigned_exams_timetable": 41,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 41,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 10,
+      "assigned_exams_timetable": 248,
+      "solver_status": "FEASIBLE (TIME LIMIT)",
+      "allocated_exams_count": 194,
+      "unallocated_exams_count": 54,
+      "category": "Feasible (Time Limit)"
+    },
+    {
+      "period": 11,
+      "assigned_exams_timetable": 162,
+      "solver_status": "FEASIBLE (TIME LIMIT)",
+      "allocated_exams_count": 130,
+      "unallocated_exams_count": 32,
+      "category": "Feasible (Time Limit)"
+    },
+    {
+      "period": 12,
+      "assigned_exams_timetable": 146,
+      "solver_status": "Infeasible",
+      "allocated_exams_count": 4,
+      "unallocated_exams_count": 142,
+      "category": "Infeasible"
+    },
+    {
+      "period": 13,
+      "assigned_exams_timetable": 109,
+      "solver_status": "FEASIBLE (TIME LIMIT)",
+      "allocated_exams_count": 86,
+      "unallocated_exams_count": 23,
+      "category": "Feasible (Time Limit)"
+    },
+    {
+      "period": 14,
+      "assigned_exams_timetable": 98,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 98,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 15,
+      "assigned_exams_timetable": 112,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 112,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 16,
+      "assigned_exams_timetable": 76,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 76,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 17,
+      "assigned_exams_timetable": 67,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 67,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 18,
+      "assigned_exams_timetable": 46,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 46,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 19,
+      "assigned_exams_timetable": 46,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 46,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 20,
+      "assigned_exams_timetable": 63,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 63,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 21,
+      "assigned_exams_timetable": 51,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 51,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 22,
+      "assigned_exams_timetable": 49,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 49,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 23,
+      "assigned_exams_timetable": 35,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 35,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 24,
+      "assigned_exams_timetable": 39,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 39,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 25,
+      "assigned_exams_timetable": 32,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 32,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 26,
+      "assigned_exams_timetable": 38,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 38,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 27,
+      "assigned_exams_timetable": 26,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 26,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 28,
+      "assigned_exams_timetable": 30,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 30,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    },
+    {
+      "period": 29,
+      "assigned_exams_timetable": 31,
+      "solver_status": "OPTIMAL",
+      "allocated_exams_count": 31,
+      "unallocated_exams_count": 0,
+      "category": "Optimal"
+    }
+  ]
+}

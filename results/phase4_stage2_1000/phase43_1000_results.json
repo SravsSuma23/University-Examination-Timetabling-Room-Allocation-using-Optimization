@@ -1,0 +1,49 @@
+{
+  "phase": "4.3",
+  "scope": "Exams 1..1000",
+  "final_classification": "INFEASIBLE",
+  "classification_rationale": "Period 1 contains Exam 990 (15 enrolled students), but the benchmark data in data/exam_rooms.csv restricts Exam 990 solely to Room 351, which has a physical capacity of 14 seats. Consequently, the hard physical capacity constraint sum_r q[e,r] == N_e cannot be satisfied for Period 1, proving that under strict non-relaxable benchmark room restrictions, Period 1 is mathematically INFEASIBLE.",
+  "period_subproblem_analysis": {
+    "total_periods": 29,
+    "periods_optimal": 28,
+    "periods_infeasible": 1,
+    "infeasible_period_id": 1,
+    "infeasible_exam_id": 990,
+    "exam_990_students": 15,
+    "exam_990_allowed_rooms": [
+      351
+    ],
+    "room_351_capacity": 14,
+    "capacity_deficit": 1
+  },
+  "solver_performance": {
+    "build_time_seconds": 0.1,
+    "solve_time_seconds": 443.54,
+    "total_wallclock_seconds": 443.64,
+    "solver_status": "Infeasible"
+  },
+  "allocation_metrics": {
+    "total_exams": 1000,
+    "allocated_exams": 992,
+    "unallocated_exams_count": 8,
+    "unallocated_exam_ids": [
+      29,
+      205,
+      395,
+      405,
+      616,
+      632,
+      884,
+      983
+    ],
+    "total_required_students": 68165,
+    "total_allocated_capacity": 78346,
+    "unused_capacity_d1": 10262,
+    "room_penalty_d2": 188,
+    "split_examinations_count": 221,
+    "single_room_examinations_count": 771,
+    "additional_room_assignments": 267,
+    "d3_plus_deviations": 267,
+    "seating_utilization_pct": 87.01
+  }
+}

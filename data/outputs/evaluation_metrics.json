@@ -1,0 +1,31 @@
+{
+    "feasibility": {
+        "enforced_direct_conflicts": 0,
+        "documented_preassignment_overlaps": 0,
+        "hard_constraint_violations": 12,
+        "room_capacity_violations": 0,
+        "double_booking_violations": 0,
+        "overall_status": "PENALIZED/VIOLATED"
+    },
+    "timetabling_quality": {
+        "period_penalty": 606,
+        "bip_objective_value": 0.0,
+        "scheduled_exams_count": 2198
+    },
+    "room_quality": {
+        "room_utilization_pct": 60.68,
+        "unused_capacity": 72175,
+        "room_penalty": 352,
+        "room_splits": 540,
+        "gp_objective_value": 74411.0
+    },
+    "computational": {
+        "bip_runtime_seconds": 0.0,
+        "gp_runtime_seconds": 463.23,
+        "total_runtime_seconds": 463.23,
+        "bip_status": "UNKNOWN",
+        "gp_status": "Infeasible",
+        "bip_variables": 0,
+        "bip_constraints": 0
+    }
+}

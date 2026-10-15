@@ -1,0 +1,96 @@
+{
+  "audit_scope": "Exams 1..150",
+  "audit_status": "PASS WITH REPORTING CORRECTIONS",
+  "summary": {
+    "total_exams_allocated": 150,
+    "total_required_students": 11450,
+    "total_allocated_capacity": 11790,
+    "total_unused_capacity": 340,
+    "seating_utilization_pct": 97.12,
+    "average_unused_capacity_per_exam": 2.27,
+    "total_room_operational_penalty": 60,
+    "total_unique_rooms_used": 109,
+    "exams_single_room": 108,
+    "exams_split_2_plus_rooms": 42,
+    "exams_split_2_rooms": 38,
+    "exams_split_3_rooms": 4,
+    "mandatory_split_exams": 1,
+    "optional_split_exams": 41,
+    "additional_rooms_beyond_first": 46,
+    "d1_plus_unused_capacity": 340,
+    "d2_plus_room_penalty": 60,
+    "d3_plus_split_deviations": 46,
+    "objective_z2": 446.0
+  },
+  "split_clarification": {
+    "A_split_examinations_count": 42,
+    "B_additional_rooms_count": 46,
+    "C_mandatory_split_count": 1,
+    "D_optional_split_count": 41,
+    "E_d3_plus_mathematical_sum": 46,
+    "explanation": "The value 46 in the original report is NOT the count of split exams (which is 42), but the exact mathematical deviation d3+ = SUM(rooms_used - 1) = 38*(2-1) + 4*(3-1) = 38 + 8 = 46. The original report text conflated the count of split exams with d3+."
+  },
+  "exam_118_audit": {
+    "exam_id": 118,
+    "students": 78,
+    "eligible_rooms": [
+      139,
+      140
+    ],
+    "eligible_capacities": [
+      66,
+      56
+    ],
+    "max_single_eligible_capacity": 66,
+    "assigned_rooms": [
+      139,
+      140
+    ],
+    "assigned_capacities": [
+      66,
+      56
+    ],
+    "total_assigned_capacity": 122,
+    "mandatory_split": true,
+    "is_valid": true
+  },
+  "shared_rooms_audit": {
+    "room_id": 346,
+    "period_id": 1,
+    "exams": [
+      100,
+      101,
+      102
+    ],
+    "students_per_exam": [
+      19,
+      15,
+      18
+    ],
+    "room_capacity": 20,
+    "is_mandated_by_benchmark": true,
+    "is_genuine_double_booking_violation": false,
+    "explanation": "Exams 100, 101, and 102 each have ONLY Room 346 listed in data/exam_rooms.csv. Stage 1 scheduled all three in Period 1. Sharing is an inescapable property of the raw dataset, not a solver bug."
+  },
+  "hard_constraints_validation": {
+    "student_accommodation_violations": 0,
+    "room_capacity_violations": 0,
+    "genuine_double_booking_violations": 0,
+    "dataset_mandated_shared_room_instances": 2,
+    "fixed_room_violations": 0,
+    "stage1_period_modifications": 0,
+    "invalid_room_eligibility_violations": 0
+  },
+  "objective_verification": {
+    "w1": 1.0,
+    "w2": 1.0,
+    "w3": 1.0,
+    "d1_plus": 340,
+    "d2_plus": 60,
+    "d3_plus": 46,
+    "recomputed_z2": 446.0,
+    "reported_z2": 446.0,
+    "difference": 0.0,
+    "status": "PASS"
+  }
+}

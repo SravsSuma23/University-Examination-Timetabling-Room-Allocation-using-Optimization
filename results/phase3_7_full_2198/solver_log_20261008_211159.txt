@@ -1,0 +1,89 @@
+================================================================================
+  PHASE 3.7 — FULL 2,198-EXAM OPTION 2 BIP BENCHMARK RUN
+  Execution Timestamp: 2026-10-08 21:11:59
+  Output Directory   : E:\SEM 7\operation research\project\results\phase3_7_full_2198
+================================================================================
+
+--------------------------------------------------------------------------------
+  1. DATASET INTEGRITY VERIFICATION
+--------------------------------------------------------------------------------
+  Dataset loaded in: 0.1s
+  Total Examinations        : 2,198 (Expected: 2,198)
+  Total Registered Students : 34,988 (Expected: 34,988)
+  Total Course Enrollments  : 130,539 (Expected: 130,539)
+  Total Examination Periods : 29 (Expected: 29)
+  Fixed-Time Examinations   : 154 (Exams with exactly 1 allowed period)
+  Time-Restricted Exams     : 169 (Exams with < 29 allowed periods)
+  Distribution Constraints  : 13 (Expected: 13 institutional rules)
+  Initial Process Memory    : 73.1 MB
+  -> DATASET VERIFICATION PASSED: All 2,198 exams confirmed.
+
+--------------------------------------------------------------------------------
+  2. OPTION 2 BIP MODEL CONSTRUCTION (All 2,198 Exams)
+--------------------------------------------------------------------------------
+  [BUILD COMPLETED] Time: 43.29s
+  Process Memory Post-Build : 2431.7 MB (Delta: +2358.7 MB)
+  Primary Assignment Variables (x): 59,041
+  Soft Conflict Variables (z)     : 1,956,655
+  Total Decision Variables        : 2,015,696
+  Exact-One Constraints           : 2,198
+  Fixed-Time Constraints          : 154
+  Distribution Constraints        : 494
+  Conflict Linking Constraints (z): 1,956,655
+  Total Model Constraints         : 1,959,501
+
+--------------------------------------------------------------------------------
+  3. SOLVING VIA COIN-OR CBC (Time Limit: 900s / 15 minutes)
+--------------------------------------------------------------------------------
+  [SOLVE COMPLETED] Wall-Clock Time: 283.87s (CBC Reported: 283.42910981178284s)
+  Peak Process Memory             : 1255.2 MB
+  CBC Raw Solver Status           : ERROR
+  Strict Classification           : UNKNOWN / TIME LIMIT
+  Exams Scheduled                 : 0 / 2,198 (0.00%)
+  Reported Objective Value Z1     : 0.0
+  Period Undesirability Penalty   : 0.0
+  Student Conflict Penalty        : 0.0
+
+--------------------------------------------------------------------------------
+  4. TIMETABLE EXTRACTION
+--------------------------------------------------------------------------------
+  *** WARNING: No solution timetable generated to save! ***
+
+--------------------------------------------------------------------------------
+  5. INDEPENDENT VALIDATION AUDIT
+--------------------------------------------------------------------------------
+  Cannot validate: No timetable produced.
+
+================================================================================
+  PHASE 3.7 — FULL 2,198-EXAM OPTION 2 BIP VALIDATION REPORT
+================================================================================
+  A. Dataset Verification:
+     - Exams                  : 2,198
+     - Students               : 34,988
+     - Enrollments            : 130,539
+     - Periods                : 29
+     - Fixed-Time Exams       : 154
+     - Distribution Rules     : 13
+  B. Model Statistics:
+     - x Variables            : 59,041
+     - z Variables            : 1,956,655
+     - Total Variables        : 2,015,696
+     - Total Constraints      : 1,959,501
+     - Construction Time      : 43.29s
+     - Peak Process Memory    : ~1255.2 MB
+  C. CBC Solver Result:
+     - Raw Status             : ERROR
+     - Classification         : UNKNOWN / TIME LIMIT
+     - Wall-Clock Solve Time  : 283.87s
+     - Best Objective Z1      : 0.0
+  D. Timetable Completeness:
+     - Exams Scheduled        : 0 / 2,198
+     - Completion Percentage  : 0.00%
+  E. Independent Hard-Feasibility Validation:
+  F. Soft Conflict Quality:
+  G. Output Files:
+     - Timetable Output       : E:\SEM 7\operation research\project\results\phase3_7_full_2198\timetable_2198_option2.csv
+     - Solver Log             : E:\SEM 7\operation research\project\results\phase3_7_full_2198\solver_log_20261008_211159.txt
+     - Validation Report      : E:\SEM 7\operation research\project\results\phase3_7_full_2198\validation_report_20261008_211159.txt
+  H. Final Classification      : UNKNOWN / TIME LIMIT
+================================================================================

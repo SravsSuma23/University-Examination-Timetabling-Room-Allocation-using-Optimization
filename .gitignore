@@ -1,0 +1,15 @@
+﻿__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.pytest_cache/
+scratch/
+results/live_runs/
+*.mps
+*.sol
+test_incumbent.txt
+tmp_opts.txt

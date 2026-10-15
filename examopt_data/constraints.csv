@@ -1,0 +1,14 @@
+constraint_id,constraint_type,exam_ids
+1,same-period,"314,879"
+2,same-period,"325,5"
+3,different-period,"494,448"
+4,same-period,"968,1189,1190"
+5,precedence,"67,68"
+6,same-period,"1751,1187"
+7,same-period,"323,2,6,7"
+8,different-period,60
+9,same-period,"1030,306"
+10,different-period,"1316,1321"
+11,same-period,"320,880"
+12,same-period,"321,1874,881,882,883"
+13,same-period,"1,322"

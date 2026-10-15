@@ -1,0 +1,113 @@
+{
+  "scope_50": {
+    "pairwise_z": {
+      "status": "OPTIMAL",
+      "scheduled": 50,
+      "x_vars": 1424,
+      "conflict_vars": 3132,
+      "total_vars": 4556,
+      "total_constraints": 3240,
+      "build_time": 0.32,
+      "solve_time": 0.67,
+      "model_period_penalty": 0.0,
+      "model_conflict_penalty": 0.0,
+      "model_z1": 0.0,
+      "hard_violations": 0,
+      "indep_conflict_penalty": 0,
+      "indep_period_penalty": 0,
+      "indep_z1": 0.0
+    },
+    "pairwise_compact": {
+      "status": "OPTIMAL",
+      "scheduled": 50,
+      "x_vars": 1424,
+      "conflict_vars": 108,
+      "total_vars": 1532,
+      "total_constraints": 3240,
+      "build_time": 0.22,
+      "solve_time": 0.54,
+      "model_period_penalty": 0.0,
+      "model_conflict_penalty": 0.0,
+      "model_z1": 0.0,
+      "hard_violations": 0,
+      "indep_conflict_penalty": 0,
+      "indep_period_penalty": 0,
+      "indep_z1": 0.0
+    }
+  },
+  "scope_100": {
+    "pairwise_z": {
+      "status": "OPTIMAL",
+      "scheduled": 100,
+      "x_vars": 2818,
+      "conflict_vars": 10996,
+      "total_vars": 13814,
+      "total_constraints": 11157,
+      "build_time": 0.9,
+      "solve_time": 3.26,
+      "model_period_penalty": 0.0,
+      "model_conflict_penalty": 0.0,
+      "model_z1": 0.0,
+      "hard_violations": 0,
+      "indep_conflict_penalty": 0,
+      "indep_period_penalty": 0,
+      "indep_z1": 0.0
+    },
+    "pairwise_compact": {
+      "status": "OPTIMAL",
+      "scheduled": 100,
+      "x_vars": 2818,
+      "conflict_vars": 384,
+      "total_vars": 3202,
+      "total_constraints": 11157,
+      "build_time": 0.25,
+      "solve_time": 1.45,
+      "model_period_penalty": 0.0,
+      "model_conflict_penalty": 0.0,
+      "model_z1": 0.0,
+      "hard_violations": 0,
+      "indep_conflict_penalty": 0,
+      "indep_period_penalty": 0,
+      "indep_z1": 0.0
+    }
+  },
+  "scope_150": {
+    "pairwise_compact": {
+      "status": "OPTIMAL",
+      "scheduled": 150,
+      "x_vars": 4156,
+      "conflict_vars": 652,
+      "total_vars": 4808,
+      "total_constraints": 18283,
+      "build_time": 0.47,
+      "solve_time": 3.34,
+      "model_period_penalty": 0.0,
+      "model_conflict_penalty": 0.0,
+      "model_z1": 0.0,
+      "hard_violations": 0,
+      "indep_conflict_penalty": 0,
+      "indep_period_penalty": 0,
+      "indep_z1": 0.0
+    }
+  },
+  "scope_350": {
+    "pairwise_compact": {
+      "status": "OPTIMAL",
+      "scheduled": 350,
+      "x_vars": 9789,
+      "conflict_vars": 3346,
+      "total_vars": 13135,
+      "total_constraints": 95303,
+      "build_time": 4.92,
+      "solve_time": 57.92,
+      "model_period_penalty": 0.0,
+      "model_conflict_penalty": 0.0,
+      "model_z1": 0.0,
+      "hard_violations": 0,
+      "indep_conflict_pairs": 0,
+      "indep_conflict_penalty": 0,
+      "indep_period_penalty": 0,
+      "indep_z1": 0.0
+    }
+  }
+}

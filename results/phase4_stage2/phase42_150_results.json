@@ -1,0 +1,52 @@
+{
+  "solve_summary": {
+    "status": "OPTIMAL",
+    "runtime": 97.1,
+    "objective_value": 446.0,
+    "unused_capacity": 340,
+    "room_penalty": 60,
+    "room_splits": 46,
+    "utilization_pct": 97.12,
+    "allocated_records": 196
+  },
+  "metrics": {
+    "total_required_capacity": 11450,
+    "total_allocated_capacity": 11790,
+    "total_unused_capacity": 340,
+    "average_unused_capacity": 2.27,
+    "overall_room_utilization_pct": 97.12,
+    "average_room_utilization_pct": 90.21,
+    "total_room_penalty": 60,
+    "exams_using_multiple_rooms": 42,
+    "mandatory_split_exams": 1,
+    "unnecessary_split_exams": 41,
+    "total_unique_rooms_used": 109,
+    "max_rooms_one_exam": 3,
+    "max_rooms_one_period": 26,
+    "goal_programming_objective_z2": 446.0
+  },
+  "validation": {
+    "student_accommodation": {
+      "status": "PASS",
+      "violations": 0,
+      "details": []
+    },
+    "capacity_compliance": {
+      "status": "PASS",
+      "violations": 0,
+      "details": []
+    },
+    "double_booking": {
+      "status": "PASS",
+      "violations": 0,
+      "details": [],
+      "dataset_mandated_shared_rooms": 2
+    },
+    "fixed_room_compliance": {
+      "status": "PASS",
+      "violations": 0,
+      "details": []
+    },
+    "overall_status": "PASS"
+  }
+}

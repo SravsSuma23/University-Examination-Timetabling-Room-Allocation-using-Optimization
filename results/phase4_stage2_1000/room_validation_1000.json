@@ -1,0 +1,11 @@
+{
+  "total_exams": 1000,
+  "overall_status": "FAIL",
+  "failure_reason": "Period 1 mathematical infeasibility caused by benchmark capacity bottleneck on Exam 990 (15 students restricted exclusively to Room 351 of capacity 14).",
+  "student_accommodation_violations": 9,
+  "capacity_violations": 1,
+  "genuine_double_booking_violations": 0,
+  "dataset_mandated_shared_rooms": 2,
+  "stage1_period_modifications": 0,
+  "eligibility_violations": 0
+}

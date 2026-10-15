@@ -1,0 +1,136 @@
+{
+  "scope": 350,
+  "pairwise_z": {
+    "vars": 104585,
+    "x_vars": 9789,
+    "z_vars": 94796,
+    "constraints": 95303,
+    "exact_one_constrs": 350,
+    "fixed_time_constrs": 11,
+    "conflict_constrs": 94796,
+    "dist_constrs": 146,
+    "build_time": 2.51,
+    "solve_time": 126.1,
+    "status": "OPTIMAL",
+    "model_period_penalty": 1.0,
+    "model_conflict_penalty": 0.0,
+    "model_z1": 1.0,
+    "indep_period_penalty": 1,
+    "indep_conflict_penalty": 0,
+    "indep_z1": 1.0,
+    "hard_violations": 0
+  },
+  "pairwise_compact": {
+    "vars": 13135,
+    "x_vars": 9789,
+    "c_vars": 3346,
+    "constraints": 95303,
+    "exact_one_constrs": 350,
+    "fixed_time_constrs": 11,
+    "conflict_constrs": 94796,
+    "dist_constrs": 146,
+    "build_time": 1.99,
+    "solve_time": 34.37,
+    "status": "OPTIMAL",
+    "model_period_penalty": 0.0,
+    "model_conflict_penalty": 0.0,
+    "model_z1": 0.0,
+    "indep_period_penalty": 0,
+    "indep_conflict_penalty": 0,
+    "indep_z1": 0.0,
+    "hard_violations": 0
+  },
+  "distribution_rules_audit": [
+    {
+      "rule_id": 1,
+      "type": "same-period",
+      "exam_count_total": 2,
+      "exam_count_scope350": 1,
+      "generated_constrs_scope350": 0
+    },
+    {
+      "rule_id": 2,
+      "type": "same-period",
+      "exam_count_total": 2,
+      "exam_count_scope350": 2,
+      "generated_constrs_scope350": 29
+    },
+    {
+      "rule_id": 3,
+      "type": "different-period",
+      "exam_count_total": 2,
+      "exam_count_scope350": 0,
+      "generated_constrs_scope350": 0
+    },
+    {
+      "rule_id": 4,
+      "type": "same-period",
+      "exam_count_total": 3,
+      "exam_count_scope350": 0,
+      "generated_constrs_scope350": 0
+    },
+    {
+      "rule_id": 5,
+      "type": "precedence",
+      "exam_count_total": 2,
+      "exam_count_scope350": 2,
+      "generated_constrs_scope350": 1
+    },
+    {
+      "rule_id": 6,
+      "type": "same-period",
+      "exam_count_total": 2,
+      "exam_count_scope350": 0,
+      "generated_constrs_scope350": 0
+    },
+    {
+      "rule_id": 7,
+      "type": "same-period",
+      "exam_count_total": 4,
+      "exam_count_scope350": 4,
+      "generated_constrs_scope350": 87
+    },
+    {
+      "rule_id": 8,
+      "type": "different-period",
+      "exam_count_total": 1,
+      "exam_count_scope350": 1,
+      "generated_constrs_scope350": 0
+    },
+    {
+      "rule_id": 9,
+      "type": "same-period",
+      "exam_count_total": 2,
+      "exam_count_scope350": 1,
+      "generated_constrs_scope350": 0
+    },
+    {
+      "rule_id": 10,
+      "type": "different-period",
+      "exam_count_total": 2,
+      "exam_count_scope350": 0,
+      "generated_constrs_scope350": 0
+    },
+    {
+      "rule_id": 11,
+      "type": "same-period",
+      "exam_count_total": 2,
+      "exam_count_scope350": 1,
+      "generated_constrs_scope350": 0
+    },
+    {
+      "rule_id": 12,
+      "type": "same-period",
+      "exam_count_total": 5,
+      "exam_count_scope350": 1,
+      "generated_constrs_scope350": 0
+    },
+    {
+      "rule_id": 13,
+      "type": "same-period",
+      "exam_count_total": 2,
+      "exam_count_scope350": 2,
+      "generated_constrs_scope350": 29
+    }
+  ]
+}
