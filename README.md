@@ -11,11 +11,12 @@
 
 | Name | Roll Number | Role |
 | :--- | :--- | :--- |
-| **K. Bhanu Prakash** | `CB.SC.U4AIE23134` | OR Modeling & Conflict Structure |
-| **M. Sravanthi Suma** | `CB.SC.U4AIE23148` | BIP Formulation & Goal Programming |
-| **Nandana Thachilath M** | `CB.SC.U4AIE23151` | Independent Validation & Metrics |
-| **Y. Navadeep** | `CB.SC.U4AIE23163` | UI/UX & Decision Support System |
-
+| **K. Bhanu Prakash** | `CB.SC.U4AIE23134` | 
+| **M. Sravanthi Suma** | `CB.SC.U4AIE23148` | 
+| **Nandana Thachilath M** | `CB.SC.U4AIE23151` |
+| **Y. Navadeep** | `CB.SC.U4AIE23163` | 
+| **V.Bhavya Kruthi** | `CB.SC.U4AIE23073` | 
+| **V.Divya Madhuri** | `CB.SC.U4AIE23024` | 
 ---
 
 ## 📌 Executive Summary & Problem Definition
