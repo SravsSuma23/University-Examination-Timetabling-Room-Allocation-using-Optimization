@@ -9,8 +9,8 @@
 
 ## 👥 Project Team
 
-| Name | Roll Number | Role |
-| :--- | :--- | :--- |
+| Name | Roll Number | 
+| :--- | :--- | 
 | **K. Bhanu Prakash** | `CB.SC.U4AIE23134` | 
 | **M. Sravanthi Suma** | `CB.SC.U4AIE23148` | 
 | **Nandana Thachilath M** | `CB.SC.U4AIE23151` |
